@@ -1,0 +1,14 @@
+<students>
+	<student>
+		<name>Md.Al-Amin </name>
+		<age>12 </age>
+		<dept>SE</dept>
+		<email>alamin@aiub.edu</email>
+	</student>
+	<student>
+		<name>Md.Al-Amin </name>
+		<age>12 </age>
+		<dept>SE</dept>
+		<email>alamin@aiub.edu</email>
+	</student>
+</students>
