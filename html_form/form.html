@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>HTML Form Tag</title>
+</head>
+<body>
+
+	<fieldset>
+		<legend>Signup</legend>
+		<form method="POST" action="abc.html">
+			<table border="1">
+				<tr>
+					<td>Username: </td>
+					<td><input type="text" name="username" value="" placeholder="type username"></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input type="password" name="password" value="" ></td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td><input type="email" name="email" value="" ></td>
+				</tr>
+				<tr>
+					<td>DOB:</td>
+					<td><input type="date" name="dob"></td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td>
+						<input type="radio" name="gender" value=""> Male
+						<input type="radio" name="gender" value=""> Female
+						<input type="radio" name="gender" value=""> Other
+					</td>
+				</tr>
+				<tr>
+					<td>DEPT:</td>
+					<td>
+						<input type="checkbox" name="" value=""> CSE 
+						<input type="checkbox" name="" value=""> SE
+						<input type="checkbox" name="" value=""> CSE
+					</td>
+				</tr>
+				<tr>
+					<td>BG:</td>
+					<td>
+						<select name="bg">
+							<option value="">A+</option>
+							<option value="">B+</option>
+							<option value="">AB+</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">Boi:</td>
+					<td>
+						<textarea cols="30" rows="10"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="file" name="cv"> <br>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="button" name="btn" value="Click">
+						<input type="reset" name="reset" value="Reset">
+						<input type="submit" name="submit" value="Submit">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+</body>
+</html>
