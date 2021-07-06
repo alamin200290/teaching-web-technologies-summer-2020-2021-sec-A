@@ -10,12 +10,14 @@
 
 		if($username != '' && $password != '' && $email != ''){
 			
-			if(strlen($password) > 5){
+			if(strlen($password) >= 5){
+				
 				$user = $username."|".$password."|".$email."|".$type;
 				$file = fopen('users.txt', 'w');
 				fwrite($file, $user);
 				fclose($file);
 				header('location: ../view/login.php');
+
 			}else{
 				header('location: ../view/signup.php?msg=password_error');
 			}
