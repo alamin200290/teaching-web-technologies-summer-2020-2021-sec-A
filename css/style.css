@@ -1,0 +1,40 @@
+h1{
+	color: green;
+}
+
+#d1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: green;
+	width: 250px;
+	height: 150px;
+	/*padding: 10px 20px;*/
+	margin: 10px;
+
+}
+
+#d1:hover{
+	background-color: blue;
+	cursor: pointer;
+}
+
+#d2{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: red;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+}
+
+#d2:hover{
+	background-color: yellow;
+}
+
+.c1{
+	background-color: green;
+	width: 200px;
+	height: 150px;
+}

@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	require_once('../model/usersModel.php');
 
 	if(isset($_POST['submit'])){
 
@@ -8,21 +9,24 @@
 
 		if($username != '' && $password != ''){
 			
-			$file = fopen('users.txt', 'r');
+			/*$file = fopen('users.txt', 'r');
 			$data = fread($file, filesize('users.txt'));
-			$user = explode('|', $data);
+			$user = explode('|', $data);*/
 
 			//$data = fgets($file);
 			//$user = explode('|', $data);
 			//feof($file);
 
-			if(trim($user[0]) == $username && trim($user[1]) == $password){
-					setcookie('flag', 'true', time()+3600, '/');
-					$_SESSION['username'] = $username;
-					header('location: ../view/home.php');
+			$status = validate($username, $password);
+
+			if($status){
+				setcookie('flag', 'true', time()+3600, '/');
+				$_SESSION['username'] = $username;
+				header('location: ../view/home.php');
 			}else{
 				echo 'invlaid username/password';
 			}
+
 
 		}else{
 			echo "null value found...";
