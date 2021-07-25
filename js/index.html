@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Example</title>
+	<style>
+		#d1{
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			border-radius: 5px;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="head1">JS Example</h1>
+	<h1 id="head2">This is h1</h1>
+	<div id="d1"></div>
+	<br>
+	<input id="name" type="text" name="name" value="" onkeyup="getName()" />
+	<button onclick="getName()">test</button>
+	<script>
+		"use strict"
+
+		//name = 'alamin';
+		//var a = '12';
+		let b = 23;
+		const c = 2234.6;
+
+		/*let student = [1, 'alamin', 'CS', 2.5];
+		let students = [
+							[1, 'alamin', 'CS', 2.5]
+							[1, 'alamin', 'CS', 2.5]
+						];*/
+
+		//console.log('test...');
+
+		//document.write("<h1>JS test...</h1>");
+		//let element = document.getElementsByTagName('h1')[0];
+		//alert('js test...')
+
+		function btnAction(){
+			let element = document.getElementById('head1');
+			element.innerHTML = "text from JS";
+		}
+
+		function btnChangeColor(){
+			let element = document.getElementById('d1');
+			//element.style.backgroundColor ='green';
+			//btnAction();
+			element.style.left += '10px';
+			alert(element.style.left);
+		}
+
+		function getName(){
+			let name = document.getElementById('name').value;
+
+			if(name != ''){
+				document.getElementById('head1').innerHTML = name;
+			}else{
+				alert('null value');
+			}
+		}
+	</script>
+</body>
+</html>
